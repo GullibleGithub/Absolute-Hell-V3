@@ -1,0 +1,54 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			JAP = {
+			set_variable = { chin_chin = 50 }
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			subtract_from_variable = { chin_chin = 0.25 }
+		}
+		effect = {
+			if = {
+				limit = {
+					check_variable = { chin_chin < 25 }
+					check_variable = { chin_chin > 5 }
+				}
+				JAP = {
+					add_ideas = chin_chin_pissed
+				}
+			}
+#			else_if = {
+#				limit = {
+#					NOT = {
+#						check_variable = { chin_chin > 5 }
+#					}
+#				}
+#				JAP = {
+#					add_ideas = chin_chin_very_pissed
+#				}
+#			}
+		}
+		effect = {
+			if = {
+				limit = {
+					check_variable = { chin_chin > 70 }
+					check_variable = { chin_chin < 90 }
+				}
+				JAP = {
+					add_ideas = chin_chin_pleased
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { chin_chin > 90 }
+				}
+				JAP = {
+					add_ideas = chin_chin_very_pleased
+				}
+			}
+		}
+	}
+}

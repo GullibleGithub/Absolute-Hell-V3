@@ -1,0 +1,551 @@
+characters={
+	NEQ_twilight_sparkle={
+		name="Twilight Sparkle"
+		portraits={
+			civilian={
+				large="GFX_portrait_NEQ_twilight_sparkle"
+			}
+		}
+		gender = female 
+		country_leader={
+			ideology=centrism
+			traits={ humble staunch_constitutionalist }
+			expire="3436.1.1.1"
+			id=-1
+		}
+	}
+	
+	NEQ_clyde={
+		name="Clyde"
+		portraits={
+			civilian={
+				large="GFX_portrait_NEQ_clyde"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	NEQ_rainbow_dash={
+		name="Rainbow Dash"
+		portraits={
+			army={
+				large="GFX_portrait_NEQ_rainbow_dash"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless media_personality trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	NEQ_applejack={
+		name="Applejack"
+		portraits={
+			army={
+				large="GFX_portrait_NEQ_applejack"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer engineer_officer ranger }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3`
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
+	NEQ_pinkie_pie={
+		name="Pinkie Pie"
+		portraits={
+			army={
+				small="GFX_idea_pinkie_pie"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = pinkie_pie
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+	}
+	
+	NEQ_fluttershy={
+		name="Fluttershy"
+		portraits={
+			army={
+				small="GFX_idea_fluttershy"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = fluttershy
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+	}
+	
+	NEQ_mordecai={
+		name="Mordecai"
+		portraits={
+			army={
+				small="GFX_idea_mordecai"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = mordecai
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					staunch_monarchist 
+				}
+		}
+	}
+	
+	NEQ_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = NEQ_acgs
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	NEQ_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = NEQ_ncm
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	NEQ_mt={
+		advisor={
+			slot = theorist
+			idea_token = NEQ_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_6"
+			}
+		}
+	}
+	NEQ_nt={
+		advisor={
+			slot = theorist
+			idea_token = NEQ_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	NEQ_ai2={
+		advisor={
+			slot = high_command
+			idea_token = NEQ_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_3"
+			}
+		}
+	}
+	NEQ_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = NEQ_fascist_guy
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	NEQ_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = NEQ_stc
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	NEQ_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = NEQ_communist_guy
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	NEQ_aa2={
+		advisor={
+			slot = high_command
+			idea_token = NEQ_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_2"
+			}
+		}
+	}
+	NEQ_ar={
+		advisor={
+			slot = high_command
+			idea_token = NEQ_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_5"
+			}
+		}
+	}
+	NEQ_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = NEQ_acd2
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_1"
+			}
+		}
+	}
+	NEQ_acr={
+		advisor={
+			slot = air_chief
+			idea_token = NEQ_acr
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	NEQ_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = NEQ_coi
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	NEQ_acas={
+		advisor={
+			slot = high_command
+			idea_token = NEQ_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	NEQ_awt={
+		advisor={
+			slot = theorist
+			idea_token = NEQ_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	NEQ_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = NEQ_pot
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	NEQ_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = NEQ_nccr
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+	NEQ_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = NEQ_aco2
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_4"
+			}
+		}
+	}
+	NEQ_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = NEQ_democratic_guy
+			allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	NEQ_ncs={
+		advisor={
+			slot = high_command
+			idea_token = NEQ_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = NEQ
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+}

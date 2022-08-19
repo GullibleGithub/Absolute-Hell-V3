@@ -1,0 +1,20 @@
+#reload countrycolors
+
+BRK = {
+	color = rgb { 20 99 61 }
+	color_ui = rgb { 20 99 61 }
+}
+QDL = {
+	color = rgb { 72 149 225 }
+	color_ui = rgb { 72 149 225 }
+}
+
+JND = {
+	color = rgb { 153 51 153 }
+	color_ui = rgb { 153 51 153 }
+}
+
+NEQ = {
+	color = rgb { 191 128 255 }
+	color_ui = rgb { 191 128 255 }
+}
