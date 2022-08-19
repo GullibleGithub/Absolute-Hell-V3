@@ -1,0 +1,159 @@
+﻿###########################
+# Canadian TFV events Events
+###########################
+
+add_namespace = ah3_canada
+
+country_event = {
+	id = ah3_canada.1 #CAN demands alaska
+	title = ah3_canada.1.t
+	desc = ah3_canada.1.d
+	picture = GFX_report_event_canada_patriation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_canada.1.a # US delivers alaska
+		
+		ai_chance = {
+			base = 88
+		}
+		
+		effect_tooltip = {
+			transfer_state = 463
+			transfer_state = 939
+		}
+		hidden_effect = {
+			CAN = {
+				country_event = { id = ah3_canada.2 }
+			}
+		}
+	}
+	
+	option = {
+		name = ah3_canada.1.b # US Rejects demand
+		ai_chance = {
+			base = 12
+		}
+		add_state_claim = 463
+		add_state_claim = 939
+	}
+}
+
+country_event = {
+	id = ah3_canada.2
+	title = ah3_canada.2.t
+	desc = ah3_canada.2.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_canada.2.a
+		CAN = {
+				transfer_state = 463
+				transfer_state = 939
+		}
+	
+	hidden_effect = {
+			USA = {
+				add_stability = -2
+			}
+			news_event = { id = ah3_news.1 hours = 6 }
+		}
+	}
+}
+
+country_event = {
+	id = ah3_canada.3
+	title = ah3_canada.3.t
+	desc = ah3_canada.3.d
+	picture = GFX_report_event_canada_treaty #GFX_report_event_can_briish_columbia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_canada.3.a
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		effect_tooltip = {
+			CAN = {
+				transfer_state = 463
+				transfer_state = 939
+			}
+			USA = {
+				transfer_state = 473
+				transfer_state = 740
+			}
+		}
+	}
+	
+	option = {
+		name = ah3_canada.3.b
+		ai_chance = {
+			base = 5
+		}
+		
+		hidden_effect = {
+			CAN = {
+				country_event = { id = ah3_canada.4 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ah3_canada.4
+	title = ah3_canada.4.t
+	desc = ah3_canada.4.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_canada.4.a
+		add_state_claim = 463
+		add_state_claim = 939
+	
+	}
+}
+
+country_event = {
+	id = ah3_canada.5 
+	title = ah3_canada.5.t
+	desc = ah3_canada.5.d
+	picture = GFX_report_event_canada_patriation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_canada.5.a # US delivers
+		
+		ai_chance = {
+			base = 64
+		}
+		
+		transfer_state = 386
+		transfer_state = 844
+		transfer_state = 845
+		
+		#hidden_effect = {
+		#	CAN = {
+		#		country_event = { id = ah3_canada.2 }
+		#	}
+		#}
+	}
+	
+	option = {
+		name = ah3_canada.5.b # US Rejects demand
+		ai_chance = {
+			base = 36
+		}
+		add_state_claim = 386
+		add_state_claim = 844
+		add_state_claim = 845
+	}
+}
