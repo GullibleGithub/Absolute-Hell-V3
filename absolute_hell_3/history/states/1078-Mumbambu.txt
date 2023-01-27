@@ -1,0 +1,23 @@
+state={
+	id=1078
+	name="STATE_1078"
+	
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = UGA
+		add_claim_by = BRK
+
+	}
+	
+	provinces={
+		7133 8223 
+	}
+	manpower=283000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

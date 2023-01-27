@@ -1,0 +1,23 @@
+state={
+	id=1033
+	name="STATE_1033"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = USA
+		add_core_of = USB
+
+	}
+	
+	provinces={
+		1734 6767 7896 
+	}
+	manpower=6956	
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

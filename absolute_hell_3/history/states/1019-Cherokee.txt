@@ -1,0 +1,36 @@
+state={
+	id=1019
+	name="STATE_1019"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+		add_core_of = CSA
+		victory_points = {
+			12384 10 
+		}
+		victory_points = {
+			5090 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		968 5090 9967 10909 12803 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

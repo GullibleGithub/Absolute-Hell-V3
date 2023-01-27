@@ -1,0 +1,24 @@
+state={
+	id=1017
+	name="STATE_1017"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = USA
+		add_core_of = CSA
+
+	}
+	
+	provinces={
+		4510 8110 12328 12429 
+	}
+	manpower=223279
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

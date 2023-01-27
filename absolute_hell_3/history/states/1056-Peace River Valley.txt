@@ -1,0 +1,29 @@
+
+state={
+	id=1056
+	name="STATE_1056"
+	
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			2407 1 
+		}
+		victory_points = {
+			13241 1
+		}
+		add_core_of = CAN
+
+	}
+	
+	provinces={
+		2407 7858 13283 
+	}
+	manpower=11171
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

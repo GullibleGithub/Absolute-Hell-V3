@@ -1,0 +1,41 @@
+
+state={
+	id=8
+	name="STATE_8"
+	resources={
+		steel=5.000
+	}
+
+	history={
+		owner = LUX
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			9559 = {
+				bunker = 10
+
+			}
+
+		}
+		victory_points = {
+			6583 15
+		}
+		victory_points = {
+			9559 10 
+		}
+		victory_points = {
+			11435 1 
+		}
+		add_core_of = LUX
+
+	}
+
+	provinces={
+		6583 9559 11435 
+	}
+	manpower=294748
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=921
+	name="STATE_921"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+		add_claim_by = CSA
+
+	}
+	
+	provinces={
+		1972 5044 10645 10914 12552 
+	}
+	manpower=208637
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=957
+	name="STATE_957"
+	
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 0
+		}
+
+		add_core_of = SUD
+		add_core_of = EGY
+	}
+	
+	provinces={
+		13290 13291 
+	}
+	manpower=17
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

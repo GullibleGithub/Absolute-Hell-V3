@@ -1,0 +1,26 @@
+state={
+	id=911
+	name="STATE_911"
+	
+	history={
+		owner = LUX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			3560 1 
+		}
+		add_core_of = LUX
+
+	}
+	
+	provinces={
+		3560 9418 11407 
+	}
+	manpower=298000	
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

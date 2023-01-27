@@ -1,0 +1,22 @@
+state={
+	id=945
+	name="STATE_945"
+	
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = MON
+
+	}
+
+	provinces={
+		4882 
+	}
+	manpower=58200
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

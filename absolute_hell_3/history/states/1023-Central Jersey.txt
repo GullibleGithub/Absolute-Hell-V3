@@ -1,0 +1,29 @@
+state={
+	id=1023
+	name="STATE_1023"
+	
+	history={
+		owner = QDL
+		victory_points = {
+			11782 30 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 1
+
+		}
+		add_core_of = QDL
+		add_core_of = USA
+
+	}
+	
+	provinces={
+		11782 
+	}
+	manpower=3436446
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=69.420
+}

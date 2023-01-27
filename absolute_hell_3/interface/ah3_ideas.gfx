@@ -1,0 +1,36 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_the_forbidden_syrup"
+		texturefile = "gfx/interface/ideas/the_forbidden_syrup.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_chin_chin_pissed"
+		texturefile = "gfx/interface/ideas/idea_chin_chin_pissed.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_chin_chin_very_pissed"
+		texturefile = "gfx/interface/ideas/idea_chin_chin_very_pissed.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_chin_chin_pleased"
+		texturefile = "gfx/interface/ideas/idea_chin_chin_pleased.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_chin_chin_very_pleased"
+		texturefile = "gfx/interface/ideas/idea_chin_chin_very_pleased.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_pinkie_pissed"
+		texturefile = "gfx/interface/ideas/idea_pinkie_pissed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pinkie_pissed2"
+		texturefile = "gfx/interface/ideas/idea_pinkie_pissed2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_equalization"
+		texturefile = "gfx/interface/ideas/idea_equalization.dds"
+	}
+	
+}

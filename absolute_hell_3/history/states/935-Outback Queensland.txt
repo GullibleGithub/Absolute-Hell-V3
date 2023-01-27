@@ -1,0 +1,22 @@
+state={
+	id=935
+	name="STATE_935"
+	
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AST
+
+	}
+	
+	provinces={
+		5206 10336 10936 10955 
+	}
+	manpower=39850
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

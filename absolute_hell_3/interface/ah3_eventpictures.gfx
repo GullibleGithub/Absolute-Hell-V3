@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_can_briish_columbia"
+		texturefile = "gfx/event_pictures/report_event_can_briish_columbia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_trollface"
+		texturefile = "gfx/event_pictures/report_event_trollface.dds"
+	}
+
+}

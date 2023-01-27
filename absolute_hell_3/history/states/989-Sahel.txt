@@ -1,0 +1,22 @@
+state={
+	id=989
+	name="STATE_989"
+	
+	history={
+		owner = FRA
+		add_core_of = VOL
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	
+	provinces={
+		2001 7950 
+	}
+	manpower=521911
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

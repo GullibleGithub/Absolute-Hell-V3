@@ -1,0 +1,209 @@
+music_station = "ah3_music_station"
+music = {
+	song = "shawty_wanna_fuck"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "jpro"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "help"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+					original_tag = MEN
+				}
+			}
+		}	
+
+		modifier = {
+			factor = 3
+			OR = {
+				original_tag = JAP
+				original_tag = MAN
+				original_tag = MEN
+			}
+		}
+	}
+}
+music = {
+	song = "doin_your_mom"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "ghosts_just_wanna_dance"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "mad_twience"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = NEQ
+			}
+		}	
+		modifier = {
+			factor = 3
+			original_tag = NEQ
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "better_than_ever"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = NEQ
+			}
+		}	
+		modifier = {
+			factor = 3
+			original_tag = NEQ
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "tricks_up_my_sleeve"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = NEQ
+			}
+		}	
+		modifier = {
+			factor = 3
+			original_tag = NEQ
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "smile_song"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = NEQ
+			}
+		}	
+		modifier = {
+			factor = 3
+			original_tag = NEQ
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "the_cutie_mark_crusaders_go_crusading"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = NEQ
+			}
+		}	
+		modifier = {
+			factor = 3
+			original_tag = NEQ
+		}
+	}
+}
+music = {
+	song = "babs_seed"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = NEQ
+			}
+		}	
+		modifier = {
+			factor = 3
+			original_tag = NEQ
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "happy_day_in_paris"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = FRA
+			}
+		}	
+	}
+}
+music = {
+	song = "troll_song"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			OR = {
+				original_tag = SOV
+				original_tag = POL
+				original_tag = BEL
+				original_tag = UKR
+			}
+		}	
+	}
+}
+music = {
+	song = "epic_troll_song_remix"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				OR = {
+					original_tag = SOV
+					original_tag = POL
+					original_tag = BEL
+					original_tag = UKR
+				}
+			}
+		}	
+	}
+}

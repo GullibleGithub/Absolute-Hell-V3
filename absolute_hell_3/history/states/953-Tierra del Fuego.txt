@@ -1,0 +1,26 @@
+state={
+	id=953
+	name="STATE_953"
+	
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 1
+			11009 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ARG
+
+	}
+	
+	provinces={
+		11009 
+	}
+	manpower=95000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

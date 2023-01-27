@@ -1,0 +1,31 @@
+state={
+	id=1042
+	name="STATE_1042"
+	
+	history={
+		owner = YUG
+		victory_points = {
+			3868 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			3924 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+
+	}
+	
+	provinces={
+		3868 
+	}
+	manpower=14434
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

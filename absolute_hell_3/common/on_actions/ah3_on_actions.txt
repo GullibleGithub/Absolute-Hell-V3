@@ -1,0 +1,120 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			JAP = {
+			set_variable = { chin_chin = 50 }
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			subtract_from_variable = { chin_chin = 0.25 }
+		}
+		effect = {
+			if = {
+				limit = {
+					check_variable = { chin_chin < 25 }
+					check_variable = { chin_chin > 5 }
+				}
+				JAP = {
+					add_ideas = chin_chin_pissed
+				}
+			}
+#			else_if = {
+#				limit = {
+#					NOT = {
+#						check_variable = { chin_chin > 5 }
+#					}
+#				}
+#				JAP = {
+#					add_ideas = chin_chin_very_pissed
+#				}
+#			}
+		}
+		effect = {
+			if = {
+				limit = {
+					check_variable = { chin_chin > 70 }
+					check_variable = { chin_chin < 90 }
+				}
+				JAP = {
+					add_ideas = chin_chin_pleased
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { chin_chin > 90 }
+				}
+				JAP = {
+					add_ideas = chin_chin_very_pleased
+				}
+			}
+		}
+	}
+	on_state_control_changed = { 
+		effect = { 
+			if = {
+				limit = {
+					NEQ = { controls_state = 890 }
+				}
+				set_province_name = { id = 4799 name = "Las Pegasus" }
+			}
+			else = {
+				reset_province_name = 4799
+			}
+		}
+		effect = { 
+			if = {
+				limit = {
+					NEQ = { controls_state = 380 }
+				}
+				set_province_name = { id = 4865 name = "Salt Lick City" }
+			}
+			else = {
+				reset_province_name = 4865
+			}
+		}
+		effect = { 
+			if = {
+				limit = {
+					NEQ = { controls_state = 386 }
+				}
+				set_province_name = { id = 7315 name = "Seaddle" }
+			}
+			else = {
+				reset_province_name = 7315
+			}
+		}
+		effect = { 
+			if = {
+				limit = {
+					NEQ = { controls_state = 378 }
+				}
+				378 = { set_state_name = "Califoalnia" }
+			}
+			else = {
+				378 = { set_state_name = "California" }
+			}
+		}
+		effect = { 
+			if = {
+				limit = {
+					QDL = { controls_state = 360 }
+				}
+				360 = { set_state_name = "Sexylvania" }
+				set_province_name = { id = 6845 name = "Tigger berg" }
+			}
+			else_if = {
+				limit = {
+					NEQ = { controls_state = 360 }
+				}
+				360 = { set_state_name = "Pencilvania" }
+				set_province_name = { id = 6845 name = "Fillydelphia" }
+			}
+			else = {
+				360 = { set_state_name = "Pencilvania" }
+				reset_province_name = 6845
+			}
+		}
+	}
+}

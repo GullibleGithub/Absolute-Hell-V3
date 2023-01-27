@@ -1,0 +1,24 @@
+
+state={
+	id=941
+	name="STATE_941"
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SAF
+		add_core_of = NMB
+
+	}
+
+	provinces={
+		13217 
+	}
+	manpower=90596
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

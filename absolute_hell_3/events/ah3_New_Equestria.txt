@@ -1,0 +1,423 @@
+﻿###########################
+# not Canadian TFV events Events (trollfacr)
+###########################
+
+add_namespace = ah3_equestria
+
+country_event = {
+	id = ah3_equestria.1 #NEQ demands vegas
+	title = ah3_equestria.1.t
+	desc = ah3_equestria.1.d
+	picture = GFX_report_event_canada_patriation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.1.a # US delivers vegas
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		effect_tooltip = {
+			transfer_state = 890
+		}
+		hidden_effect = {
+			NEQ = {
+				country_event = { id = ah3_equestria.2 }
+			}
+		}
+	}
+	
+	option = {
+		name = ah3_equestria.1.b # US Rejects demand
+		ai_chance = {
+			base = 15
+		}
+		
+		effect_tooltip = {
+			NEQ = {
+				country_event = { id = ah3_equestria.3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.2
+	title = ah3_equestria.2.t
+	desc = ah3_equestria.2.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.2.a
+		NEQ = {
+			transfer_state = 890
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.3
+	title = ah3_equestria.3.t
+	desc = ah3_equestria.3.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.3.a
+		ai_chance = {
+			base = 5
+		}
+		NEQ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				expire = 0
+				generator = { 890 }
+			}
+		}
+	}
+	option = {
+		name = ah3_equestria.3.b
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = { 
+			target = USA 
+			modifier = rejected_demands 
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.4
+	title = ah3_equestria.4.t
+	desc = ah3_equestria.4.d
+	picture = GFX_report_event_trollface
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.4.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.5
+	title = ah3_equestria.5.t	# not Canada asks CCCP for membership in Comintern
+	desc = ah3_equestria.5.d	#
+	picture = GFX_report_event_stalin_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.5.a # CCCP accepts not Canadian membership
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		effect_tooltip = {
+			add_to_faction = NEQ
+		}
+		
+		hidden_effect = {
+			NEQ = {
+				country_event = { id = ah3_equestria.6 }
+			}
+		}
+	}
+	
+	option = {
+		name = ah3_equestria.5.b # CCCP denies the request.
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		hidden_effect = {
+			NEQ = {
+				country_event = { id = ah3_equestria.7 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.6
+	title = ah3_equestria.6.t	#
+	desc = ah3_equestria.6.d	#
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.6.a
+		SOV = {
+			add_to_faction = NEQ
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.7
+	title = ah3_equestria.7.t	#
+	desc = ah3_equestria.7.d	#
+	picture = GFX_report_event_generic_rally_3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.7.a
+	}
+}
+
+country_event = {
+	id = ah3_equestria.8
+	title = ah3_equestria.8.t
+	desc = ah3_equestria.8.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0.5
+				has_wargoal_against = NEQ
+			}
+		}
+		name = ah3_equestria.1.a #yes
+		puppet = NEQ
+		NEQ = {
+			country_event = { id = ah3_equestria.9 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = ah3_equestria.1.b
+		ai_chance = {
+			base = 10
+		}
+		NEQ = {
+			country_event = { id = ah3_equestria.10 hours = 6 }
+		}
+	}
+}
+# USA says yes
+country_event = {
+	id = ah3_equestria.9
+	title = ah3_equestria.9.t
+	desc = ah3_equestria.9.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.9.a
+		effect_tooltip = {
+			USA = {
+				puppet = NEQ
+			}
+		}
+	}
+}
+# USA says no
+country_event = {
+	id = ah3_equestria.10
+	title = ah3_equestria.10.t
+	desc = ah3_equestria.10.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.10.a
+	}
+}
+
+country_event = {
+	id = ah3_equestria.11 
+	title = ah3_equestria.11.t
+	desc = ah3_equestria.11.d
+	picture = GFX_report_event_canada_patriation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.11.a # US agrees
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		effect_tooltip = {
+			transfer_state = 1025
+			remove_state_core = 890
+			NEQ = {
+				transfer_state = 890
+				add_state_core = 890
+				remove_state_core = 1025
+			}
+		}
+		hidden_effect = {
+			NEQ = {
+				country_event = { id = ah3_equestria.12 }
+			}
+		}
+	}
+	
+	option = {
+		name = ah3_equestria.11.b # US Rejects demand
+		ai_chance = {
+			base = 15
+		}
+		
+		effect_tooltip = {
+			NEQ = {
+				country_event = { id = ah3_equestria.13 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.12
+	title = ah3_equestria.12.t
+	desc = ah3_equestria.12.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.12.a
+		NEQ = {
+			transfer_state = 890
+		}
+		USA = {
+			transfer_state = 1025
+		}
+		hidden_effect = {
+			add_state_core = 890
+			remove_state_core = 1025
+			USA = {
+				transfer_state = 1025
+				remove_state_core = 890
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.13
+	title = ah3_equestria.13.t
+	desc = ah3_equestria.13.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.3.a
+	}
+}
+
+country_event = {
+	id = ah3_equestria.14 #NEQ demands vancouver
+	title = ah3_equestria.14.t
+	desc = ah3_equestria.14.d
+	picture = GFX_report_event_can_briish_columbia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.14.a # Canada delivers vancouver
+		
+		ai_chance = {
+			base = 4
+		}
+		
+		effect_tooltip = {
+			transfer_state = 473
+			transfer_state = 740
+		}
+		hidden_effect = {
+			NEQ = {
+				country_event = { id = ah3_equestria.15 }
+			}
+		}
+	}
+	
+	option = {
+		name = ah3_equestria.14.b # Canada Rejects vancouver
+		ai_chance = {
+			base = 20
+		}
+		
+		effect_tooltip = {
+			NEQ = {
+				country_event = { id = ah3_equestria.16 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.15
+	title = ah3_equestria.15.t
+	desc = ah3_equestria.15.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.15.a
+		NEQ = {
+			transfer_state = 473
+			transfer_state = 740
+		}
+	}
+}
+
+country_event = {
+	id = ah3_equestria.16
+	title = ah3_equestria.16.t
+	desc = ah3_equestria.16.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_equestria.16.a
+		ai_chance = {
+			base = 5
+		}
+		NEQ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+				expire = 0
+				generator = { 473 740 }
+			}
+		}
+	}
+	option = {
+		name = ah3_equestria.16.b
+		ai_chance = {
+			base = 10
+		}
+		add_state_claim = 473
+		add_state_claim = 740
+		add_opinion_modifier = {
+			target = CAN 
+			modifier = rejected_demands 
+		}
+	}
+}

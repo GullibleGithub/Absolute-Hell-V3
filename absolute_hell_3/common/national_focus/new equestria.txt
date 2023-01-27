@@ -1,0 +1,2027 @@
+focus_tree = {
+	id = equestrian-focus
+	continuous_focus_position = { x = 1 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NEQ
+		}
+	}
+	focus = {
+		id = NEQ_continue_friendship
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 4
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
+		}
+		mutually_exclusive = { focus = NEQ_time_for_a_change }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = NEQ_avoid_politics
+		icon = GFX_focus_generic_home_defense
+		relative_position_id = NEQ_continue_friendship
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_continue_friendship }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_timed_idea = { idea = neutrality_influence days = 100 }
+			add_political_power = 40
+		}
+	}
+	
+	focus = {
+		id = NEQ_friendship_in_hostile_world
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = NEQ_avoid_politics
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_avoid_politics }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = NEQ_ease_us_tensions
+		icon = GFX_focus_chi_mission_to_the_us
+		relative_position_id = NEQ_avoid_politics
+		x = 1
+		y = 2
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_friendship_in_hostile_world }
+		available = {
+			USA = { 
+				exists = yes
+			}
+			NOT = {
+				has_war_with = USA
+				is_justifying_wargoal_against = USA
+				has_wargoal_against = USA
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = medium_increase
+			}
+		}
+	}
+	focus = {
+		id = NEQ_improve_mexico_relations
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = NEQ_avoid_politics
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_friendship_in_hostile_world }
+		available = {
+			MEX = { 
+				exists = yes
+			}
+			NOT = {
+				has_war_with = MEX
+				is_justifying_wargoal_against = MEX
+				has_wargoal_against = MEX
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = MEX
+				modifier = small_increase
+			}
+		}
+	}
+	focus = {
+		id = NEQ_renounce_las_pegasus_claims
+		icon = GFX_focus_generic_treaty
+		relative_position_id = NEQ_avoid_politics
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = NEQ_ease_us_tensions }
+		bypass = {
+			890 = {
+				NOT = { is_claimed_by = ROOT }
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			remove_state_claim = 890
+			add_war_support = -0.025
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = NEQ_equestrian_defence
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = NEQ_avoid_politics
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_avoid_politics }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_command_power = 5
+			add_ideas = NEQ_equestrian_defense_idea
+		}
+	}
+	focus = {
+		id = NEQ_ban_radical_parties
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = NEQ_avoid_politics
+		x = -3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_equestrian_defence }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_ideas = NEQ_banned_radical_parties
+			add_stability = -0.025
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = NEQ_capital_defence
+		icon = GFX_goal_generic_defence
+		relative_position_id = NEQ_avoid_politics
+		x = -1
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_equestrian_defence }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			378 = {
+				add_building_construction = { type = bunker province = 11763 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6876 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 4518 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 9911 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 941 level = 1 instant_build = yes }
+				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEQ_fortify_the_border
+		icon = GFX_goal_generic_small_arms
+		relative_position_id = NEQ_avoid_politics
+		x = -1
+		y = 3
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_capital_defence }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						controller = { NOT = { is_in_faction_with = NEQ } }
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = NEQ_first_steps_in_democracy
+		icon = GFX_goal_support_democracy
+		relative_position_id = NEQ_continue_friendship
+		x = -3
+		y = 1
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_continue_friendship }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_timed_idea = { idea = democratic_influence days = 400 }
+		}
+	}
+	
+	focus = {
+		id = NEQ_cooperate_with_twilight
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = NEQ_first_steps_in_democracy
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_first_steps_in_democracy }
+		available = {
+			democratic > 0.4
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = NEQ_american_based_system
+		icon = GFX_goal_support_democracy
+		relative_position_id = NEQ_first_steps_in_democracy
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_cooperate_with_twilight }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_political_power = 20
+			add_ideas = NEQ_american_based_system_idea
+			hidden_effect = {
+				USA = {
+					add_opinion_modifier = {
+						target = NEQ
+						modifier = democratic_leanings_good
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_diplomatic_ties_with_usa
+		icon = GFX_focus_chi_mission_to_the_us
+		relative_position_id = NEQ_first_steps_in_democracy
+		x = -1
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_american_based_system }
+		available = {
+			USA = { 
+				exists = yes
+			}
+			NOT = {
+				has_war_with = USA
+				is_justifying_wargoal_against = USA
+				has_wargoal_against = USA
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = NEQ
+					modifier = large_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_califoalnia_republic
+		icon = GFX_goal_generic_alliance
+		relative_position_id = NEQ_first_steps_in_democracy
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_american_based_system }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			set_cosmetic_tag = NEQ_califoalnia
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = NEQ_the_jefferson_compromise
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = NEQ_first_steps_in_democracy
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_diplomatic_ties_with_usa }
+		prerequisite = { focus = NEQ_califoalnia_republic }
+		available = {
+			USA = { 
+				exists = yes
+			}
+			NOT = {
+				has_war_with = USA
+				is_justifying_wargoal_against = USA
+				has_wargoal_against = USA
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			USA = {
+				country_event = { id = ah3_equestria.11 }
+			}
+		}
+	}
+	focus = {
+		id = NEQ_us_territory
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = NEQ_first_steps_in_democracy
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_califoalnia_republic }
+		prerequisite = { focus = NEQ_diplomatic_ties_with_usa }
+		available = {
+			USA = { 
+				exists = yes
+			}
+			NOT = {
+				has_war_with = USA
+				is_justifying_wargoal_against = USA
+				has_wargoal_against = USA
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			USA = {
+				country_event = { id = ah3_equestria.8 }
+			}
+		}
+	}
+
+	#Time for a Change
+	
+	focus = {
+		id = NEQ_time_for_a_change
+		icon = GFX_goal_generic_propaganda
+		x = 17
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT
+		}
+		mutually_exclusive = { focus = NEQ_continue_friendship }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_timed_idea = { idea = NEQ_time_for_a_change_idea days = 365 }
+		}
+	}
+	
+	#support the left
+	
+	focus = {
+		id = NEQ_support_the_left
+		icon = GFX_goal_support_communism
+		relative_position_id = NEQ_time_for_a_change
+		x = -4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_time_for_a_change }
+		mutually_exclusive = { focus = NEQ_kindle_equestrian_nationalism }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_ideas = internationalism
+		}
+	}
+	focus = {
+		id = NEQ_gain_pony_support
+		icon = GFX_goal_generic_cavalry
+		relative_position_id = NEQ_support_the_left
+		x = -1
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_support_the_left }
+		ai_will_do = { factor = 25 }
+		completion_reward = {	
+			add_timed_idea = { idea = NEQ_support_from_ponies days = 300 }
+		}
+	}
+	focus = {
+		id = NEQ_gain_human_support
+		icon = GFX_focus_YUG_pan_slavic_congress
+		relative_position_id = NEQ_support_the_left
+		x = 1
+		y = 1
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_support_the_left }
+		ai_will_do = { factor = 25 }
+		completion_reward = {	
+			add_timed_idea = { idea = NEQ_support_from_humans days = 250 }
+		}
+	}
+	focus = {
+		id = NEQ_destroy_the_monarchy
+		icon = GFX_focus_rom_abdicate
+		relative_position_id = NEQ_support_the_left
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_gain_pony_support }
+		prerequisite = { focus = NEQ_gain_human_support }
+		ai_will_do = { factor = 25 }
+		available = {
+			communism > 0.45
+		}
+		completion_reward = {	
+			set_politics = {
+				ruling_party = communism
+			}
+			kill_ideology_leader = neutrality
+			retire_character = NEQ_mordecai
+			add_stability = -0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NEQ_begin_the_5_year_plan
+		icon = GFX_focus_generic_industry_3
+		relative_position_id = NEQ_support_the_left
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_approach_the_soviets focus = NEQ_our_equal_ideology }
+		available = {
+			has_government = communism
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = NEQ_five_year_plan days = 1826 }
+		}
+	}
+	focus = {
+		id = NEQ_socialist_education
+		icon = GFX_focus_por_workers_of_iberia
+		relative_position_id = NEQ_support_the_left
+		x = -2
+		y = 4
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_approach_the_soviets }
+		available = {
+			has_government = communism
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_ideas = NEQ_socialist_education_idea
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = NEQ_socialist_economy
+		icon = GFX_goal_generic_soviet_construction
+		relative_position_id = NEQ_support_the_left
+		x = -3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_socialist_education }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = NEQ_socialist_economy_idea
+		}
+	}
+	focus = {
+		id = NEQ_equestrian_red_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = NEQ_support_the_left
+		x = -1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_socialist_education }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NEQ_demand_las_pegasus
+		icon = GFX_goal_generic_territory_or_war
+		relative_position_id = NEQ_support_the_left
+		x = -1
+		y = 6
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = NEQ_equestrian_red_army }
+		available = {
+			USA = {
+				NOT = { is_subject_of = NEQ }
+			}
+			NOT = { is_in_faction_with = USA }
+		}
+		bypass = {
+			owns_state = 890
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			if = { 
+				limit = {
+					890 = {
+						controller = {
+							controls_state = 890
+						}
+					}
+				}
+				890 = {
+					controller = {
+						country_event = { id = ah3_equestria.1 }
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_approach_the_soviets
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		relative_position_id = NEQ_support_the_left
+		x = -2
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_destroy_the_monarchy }
+		available = {
+			has_government = communism
+			SOV = { 
+				exists = yes
+				has_government = communism
+			}
+
+			NOT = {
+				has_war_with = SOV
+				is_justifying_wargoal_against = SOV
+				has_wargoal_against = SOV
+			}
+		}
+		mutually_exclusive = { focus = NEQ_our_equal_ideology }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_increase
+			}
+			hidden_effect = {
+				USA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = communist_collaborators
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_join_comintern
+		icon = GFX_focus_generic_join_comintern
+		relative_position_id = NEQ_support_the_left
+		x = -4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_approach_the_soviets }
+		available = {
+			has_government = communism
+			SOV = { 
+				exists = yes
+				has_government = communism
+			}
+
+			NOT = {
+				has_war_with = SOV
+				is_justifying_wargoal_against = SOV
+				has_wargoal_against = SOV
+			}
+		}
+		bypass = {
+			is_in_faction_with = SOV
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			if = {
+				limit = {
+					SOV = {
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+				SOV = { 
+					country_event = { id = ah3_equestria.5 }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = NEQ_our_equal_ideology
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = NEQ_support_the_left
+		x = 2
+		y = 3
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_destroy_the_monarchy }
+		mutually_exclusive = { focus = NEQ_approach_the_soviets }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			NEQ_starlight_glimmer = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+							editor
+						}
+					}
+				promote_leader = yes
+				}
+			}
+			hidden_effect = {
+				add_ideas = NEQ_resistance_from_population_2		
+				
+			}
+		}
+	}
+	focus = {
+		id = NEQ_discourage_uniqueness
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		relative_position_id = NEQ_support_the_left
+		x = 2
+		y = 4
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_our_equal_ideology }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_ideas = NEQ_equalization_1
+		}
+	}
+	focus = {
+		id = NEQ_cutie_mark_removal_program
+		icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = NEQ_support_the_left
+		x = 1
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_discourage_uniqueness }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEQ_equalization_2
+				add_idea = NEQ_equalization_3		
+			}
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = NEQ_resistance_from_population_1
+					add_idea = NEQ_resistance_from_population_2		
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_everypony_treated_equally
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		relative_position_id = NEQ_support_the_left
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_discourage_uniqueness }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_stability = 0.075
+		}
+	}
+	focus = {
+		id = NEQ_brainwash_population
+		icon = GFX_focus_generic_military_academy
+		relative_position_id = NEQ_support_the_left
+		x = 3
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_cutie_mark_removal_program }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			remove_ideas = NEQ_resistance_from_population_2
+		}
+	}
+	focus = {
+		id = NEQ_abolish_social_hierarchy
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = NEQ_support_the_left
+		x = 1
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = NEQ_cutie_mark_removal_program }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_ideas = NEQ_abolished_social_hierarchy
+		}
+	}
+	
+	#support the right
+	
+	focus = {
+		id = NEQ_kindle_equestrian_nationalism
+		icon = GFX_goal_support_fascism
+		relative_position_id = NEQ_time_for_a_change
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = NEQ_time_for_a_change }
+		mutually_exclusive = { focus = NEQ_support_the_left }
+		available = {
+			
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_ideas = NEQ_equestrian_nationalism_1
+		}
+	}
+	focus = {
+		id = NEQ_march_in_the_capital
+		icon = GFX_focus_POL_riot_of_37
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = NEQ_kindle_equestrian_nationalism }
+		available = {
+			fascism > 0.3
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size = 0.5
+				capital = 1025
+				states = {
+					1025 1024
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_begin_recovery
+		icon = GFX_goal_generic_construction
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_march_in_the_capital }
+		available = {
+			has_government = fascism
+			has_war = no
+			NOT = {
+				any_country = {
+					original_tag = NEQ
+					has_government = fascism
+				}
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_stability = 0.1
+			add_timed_idea = { idea = NEQ_recovery_from_civil_war days = 120 }
+		}
+	}
+	focus = {
+		id = NEQ_arm_the_nation
+		icon = GFX_focus_secret_rearmament
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 0
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_begin_recovery }
+		available = {
+			has_government = fascism
+			has_war = no
+			NOT = {
+				any_country = {
+					original_tag = NEQ
+					has_government = fascism
+				}
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_timed_idea = { idea = NEQ_arm_the_nation days = 365 }
+		}
+	}
+	focus = {
+		id = NEQ_militarize_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_arm_the_nation }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = NEQ_prepare_for_war
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = -1
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_militarize_economy }
+		prerequisite = { focus = NEQ_war_propaganda }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			army_experience = 15
+			navy_experience = 15
+			air_experience = 15
+		}
+	}
+	focus = {
+		id = NEQ_take_us_pacific
+		icon = GFX_goal_generic_major_war
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 0
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = NEQ_prepare_for_war focus = NEQ_alliance_with_the_breakaways }
+		available = {
+			USA = {
+				exists = yes
+				NOT = { is_subject_of = NEQ }
+			}
+			NOT = { is_in_faction_with = USA }
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_state_claim = 379
+			add_state_claim = 385
+			add_state_claim = 386
+			add_state_claim = 846
+			add_state_claim = 387
+			add_state_claim = 380
+			add_state_claim = 377
+			add_state_claim = 891
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				expire = 0
+				generator = { 379 385 386 846 387 380 377 891 }
+			}
+			if = {
+				limit = {
+					has_idea = NEQ_magical_abilities
+				}
+				remove_ideas = NEQ_magical_abilities
+			}
+		}
+	}
+	focus = {
+		id = NEQ_target_mexico
+		icon = GFX_focus_attack_mexico
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 0
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = NEQ_take_us_pacific }
+		available = {
+			MEX = {
+				exists = yes
+				NOT = { is_subject_of = NEQ }
+			}
+			NOT = { is_in_faction_with = MEX }
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_state_claim = 482
+			add_state_claim = 483
+			add_state_claim = 481
+			add_state_claim = 983
+			create_wargoal = {
+				type = take_state_focus
+				target = MEX
+				expire = 0
+				generator = { 481 482 483 983 }
+			}
+		}
+	}
+	focus = {
+		id = NEQ_demand_vancouver
+		icon = GFX_focus_attack_canada
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 0
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = NEQ_target_mexico }
+		available = {
+			CAN = {
+				exists = yes
+				NOT = { is_subject_of = NEQ }
+			}
+			NOT = { is_in_faction_with = CAN }
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			CAN = {
+				country_event = { id = ah3_equestria.14 }
+			}
+		}
+	}
+	
+	focus = {
+		id = NEQ_execute_bronies
+		icon = GFX_focus_generic_military_dictatorship
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = -3
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_arm_the_nation }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_manpower = -8250
+		}
+	}
+	focus = {
+		id = NEQ_assassinate_sci_twi
+		icon = GFX_goal_generic_secret_weapon
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = -3
+		y = 5
+		cost = 2
+		search_filters = {
+			
+		}
+		prerequisite = { focus = NEQ_execute_bronies }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			country_event = { id = ah3_equestria.4 }
+		}
+	}
+	focus = {
+		id = NEQ_war_propaganda
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = -1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = NEQ_arm_the_nation }
+		ai_will_do = { factor = 25 }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEQ_equestrian_nationalism_1
+				add_idea = NEQ_equestrian_nationalism_2	
+			}
+		}
+	}
+	focus = {
+		id = NEQ_approach_germany
+		icon = GFX_focus_chi_mission_to_germany
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 3
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_arm_the_nation }
+		available = {
+			has_government = fascism
+			GER = { 
+				exists = yes
+				has_government = fascism
+			}
+
+			NOT = {
+				has_war_with = GER
+				is_justifying_wargoal_against = GER
+				has_wargoal_against = GER
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
+	}
+	focus = {
+		id = NEQ_approach_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 2
+		y = 6
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_arm_the_nation }
+		available = {
+			has_government = fascism
+			JAP = { 
+				exists = yes
+				has_government = fascism
+			}
+
+			NOT = {
+				has_war_with = JAP
+				is_justifying_wargoal_against = JAP
+				has_wargoal_against = JAP
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = medium_increase
+			}
+		}
+	}
+	focus = {
+		id = NEQ_alliance_with_the_breakaways
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 1
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_militarize_economy }
+		prerequisite = { focus = NEQ_war_propaganda }
+		mutually_exclusive = { focus = NEQ_join_the_axis }
+		available = {
+			has_government = fascism
+			NOT = { has_war_with = QDL }
+			is_subject = no
+			is_in_faction = no
+			QDL = {
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				is_subject = no
+			}
+			NOT = { has_war_with = JND }
+			JND = {
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				is_subject = no
+			}
+		}
+		bypass = {
+			OR = {
+				is_in_faction_with = QDL
+				is_in_faction_with = JND
+			}
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			if = {
+				limit = {
+					QDL = { 
+						exists = yes
+						is_in_faction = no 
+					}
+				}
+				NEQ = {
+					set_rule = { can_create_factions = yes }
+					create_faction = "Goofy-ahh Pony Pact"
+					QDL = { 
+						country_event = generic.5 
+					}
+					if = {
+						limit = {
+							JND = { 
+								exists = yes
+								is_in_faction = no 
+							}
+						}
+						JND = {
+							country_event = generic.5
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					QDL = { is_faction_leader = yes }
+				}
+				QDL = {
+					country_event = generic.2
+				}
+				else_if = {
+					limit = {
+						JND = { is_faction_leader = yes }
+					}
+					JND = {
+						country_event = generic.2
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_join_the_axis
+		icon = GFX_focus_chi_mission_to_germany
+		relative_position_id = NEQ_kindle_equestrian_nationalism
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NEQ_approach_germany }
+		mutually_exclusive = { focus = NEQ_alliance_with_the_breakaways }
+		available = {
+			has_government = fascism
+			GER = { 
+				exists = yes
+				has_government = fascism
+			}
+
+			NOT = {
+				has_war_with = GER
+				is_justifying_wargoal_against = GER
+				has_wargoal_against = GER
+			}
+		}
+		bypass = {
+			is_in_faction_with = GER
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			GER = {
+				country_event = { id = generic.2 }
+			}
+		}
+	}
+	
+	#general army
+	
+	focus = {
+		id = NEQ_reform_military
+		icon = GFX_focus_generic_military_mission
+		x = 31
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 50
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = NEQ_new_war_tactics
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = NEQ_reform_military
+		x = 7
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP
+		}
+		prerequisite = { focus = NEQ_reform_military }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			army_experience = 10
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = NEQ_motorized_army
+		icon = GFX_goal_generic_army_motorized
+		relative_position_id = NEQ_reform_military
+		x = 8
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_reform_military }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = NEQ_tank_development
+		icon = GFX_goal_generic_army_tanks
+		relative_position_id = NEQ_reform_military
+		x = 8
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_motorized_army }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = NEQ_pony_made_equipment
+		icon = GFX_goal_generic_production
+		relative_position_id = NEQ_reform_military
+		x = 9
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_reform_military }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	#general air force
+	
+	focus = {
+		id = NEQ_weaponize_the_wonderbolts
+		icon = GFX_goal_generic_build_airforce
+		relative_position_id = NEQ_reform_military
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_AIR_XP
+		}
+		prerequisite = { focus = NEQ_reform_military }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			air_experience = 10
+			add_war_support = 0.01
+		}
+	}
+	focus = {
+		id = NEQ_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_weaponize_the_wonderbolts }
+		mutually_exclusive = { focus = NEQ_bomber_focus }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = NEQ_heavy_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_fighter_focus }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = heavy_air
+			}
+		}
+	}
+	focus = {
+		id = NEQ_cas_effort
+		icon = GFX_goal_generic_CAS
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = -2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_heavy_fighter_focus }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = NEQ_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_weaponize_the_wonderbolts }
+		mutually_exclusive = { focus = NEQ_fighter_focus }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = NEQ_strategic_bombing
+		icon = GFX_goal_generic_air_bomber
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_bomber_focus }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = NEQ_air_formations_and_strategies
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = 0
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_bomber_focus focus = NEQ_fighter_focus }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			air_experience = 10
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = NEQ_friendship_rockets
+		icon = GFX_focus_rocketry
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = -2
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_air_formations_and_strategies }
+		prerequisite = { focus = NEQ_electronic_tools }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = NEQ_friendship_bombs
+		icon = GFX_focus_wonderweapons
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = -2
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_friendship_rockets }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = NEQ_naval_bombers
+		icon = GFX_goal_generic_air_bomber
+		relative_position_id = NEQ_weaponize_the_wonderbolts
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP
+		}
+		prerequisite = { focus = NEQ_strategic_bombing focus = NEQ_wonderbolt_carriers }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			air_experience = 10
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	
+	#general economy
+	
+	focus = {
+		id = NEQ_expand_the_industry
+		icon = GFX_focus_generic_industry_2
+		x = 25
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_new_canterlot_infrastructure
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = NEQ_expand_the_industry
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_expand_the_industry }
+		available = {
+			controls_state = 378
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				path = {
+					11763 4518
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_northern_development
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = NEQ_expand_the_industry
+		x = -1
+		y = 2
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_new_canterlot_infrastructure }
+		available = {
+			controls_state = 1025
+		}
+		bypass = {
+
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			1025 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = NEQ_connect_south_equestria
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = NEQ_expand_the_industry
+		x = -1
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_northern_development }
+		available = {
+			controls_state = 484
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			484 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				path = {
+					13215 1892 12859 7964 1904 8119 12736
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_southern_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = NEQ_expand_the_industry
+		x = 1
+		y = 1
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_expand_the_industry }
+		available = {
+			controls_state = 484
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			484 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_supply_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = NEQ_expand_the_industry
+		x = 1
+		y = 2
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NEQ_southern_factories }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_equestrian_science_institute
+		icon = GFX_focus_research
+		relative_position_id = NEQ_expand_the_industry
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_supply_factories focus = NEQ_northern_development }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = NEQ_better_machinery
+		icon = GFX_focus_SOV_organize_wreckers
+		relative_position_id = NEQ_expand_the_industry
+		x = 0
+		y = 4
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_equestrian_science_institute }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_ideas = NEQ_better_machines
+		}
+	}
+	focus = {
+		id = NEQ_electronic_tools
+		icon = GFX_goal_generic_construction2
+		relative_position_id = NEQ_expand_the_industry
+		x = 2
+		y = 4
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_equestrian_science_institute }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = NEQ_the_radar
+		icon = GFX_goal_generic_radar
+		relative_position_id = NEQ_expand_the_industry
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_electronic_tools }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_signal_company4
+			}
+		}
+	}	
+	
+	#general navy
+	
+	focus = {
+		id = NEQ_beginnings_of_a_navy
+		icon = GFX_goal_generic_build_navy
+		relative_position_id = NEQ_reform_military
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP
+		}
+		prerequisite = { focus = NEQ_reform_military }
+		available = {
+
+		}
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			navy_experience = 15
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEQ_overseas_training
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = NEQ_beginnings_of_a_navy
+		x = 0
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP
+		}
+		prerequisite = { focus = NEQ_beginnings_of_a_navy }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			navy_experience = 10
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = NEQ_destroyer_effort
+		icon = GFX_focus_generic_destroyer
+		relative_position_id = NEQ_beginnings_of_a_navy
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_beginnings_of_a_navy }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = NEQ_cruiser_efforts
+		icon = GFX_focus_generic_cruiser2
+		relative_position_id = NEQ_beginnings_of_a_navy
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_beginnings_of_a_navy }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = NEQ_wonderbolt_carriers
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = NEQ_beginnings_of_a_navy
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = NEQ_cruiser_efforts }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+}

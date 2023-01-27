@@ -1,0 +1,4 @@
+BRK	= "countries/Bruhkanda.txt"
+JND	= "countries/Juandalia.txt"
+QDL	= "countries/Quandeutchland.txt"
+NEQ	= "countries/New Equestria.txt"

@@ -1,0 +1,23 @@
+state={
+	id=1085
+	name="STATE_1085"
+	
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = POL
+
+	}
+	
+	provinces={
+		9412 13205 
+	}
+	manpower=304362
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

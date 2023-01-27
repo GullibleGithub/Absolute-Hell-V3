@@ -1,0 +1,488 @@
+ideas = {
+	country = {
+		
+		NEQ_magical_abilities = {
+
+			allowed = {
+				tag = NEQ
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			cancel = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = the_forbidden_syrup
+			
+			modifier = {
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+				research_speed_factor = 0.01
+			}
+		}
+		
+		NEQ_american_based_system_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			modifier = {
+				political_power_gain = 0.5
+				democratic_drift = 0.1
+			}
+
+			picture = eng_a_change_in_course
+			
+			removal_cost = -1	
+
+		}
+		
+		NEQ_banned_radical_parties = {
+
+			allowed = {
+				tag = NEQ
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			cancel = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = the_forbidden_syrup
+			
+			modifier = {
+				fascism_drift = -0.1
+				communism_drift = -0.1
+			}
+		}
+		NEQ_equestrian_defense_idea = {
+
+			allowed = {
+				tag = NEQ
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			cancel = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = the_forbidden_syrup
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.05
+				max_dig_in = 1
+			}
+		}
+		
+		NEQ_time_for_a_change_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				neutrality_drift = -0.1
+				war_support_weekly = 0.002
+			}
+
+			picture = eng_a_change_in_course
+			
+			removal_cost = -1	
+
+		}
+		
+		NEQ_support_from_ponies = {
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				communism_drift = 0.2
+			}
+
+			picture = eng_a_change_in_course
+			
+			removal_cost = -1	
+
+		}
+		
+		NEQ_support_from_humans = {
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				communism_drift = 0.15
+			}
+
+			picture = eng_a_change_in_course
+			
+			removal_cost = -1	
+
+		}
+		
+		NEQ_five_year_plan = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.075
+			}
+
+		}
+		
+		NEQ_socialist_education_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				communism_drift = 0.20
+				research_speed_factor = 0.05
+				war_support_factor = 0.025
+			}
+
+		}
+		
+		NEQ_socialist_economy_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1  
+				production_factory_efficiency_gain_factor = 0.1 
+				production_speed_buildings_factor = 0.05
+			}
+
+		}
+		
+		NEQ_recovery_from_civil_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				industry_repair_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+
+		}
+		
+		NEQ_equestrian_nationalism_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				fascism_drift = 0.15
+				war_support_factor = 0.05
+			}
+
+		}
+		
+		NEQ_equestrian_nationalism_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				fascism_drift = 0.2
+				war_support_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.025
+				weekly_manpower = 720
+			}
+
+		}
+		
+		NEQ_arm_the_nation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+				training_time_factor = -0.075
+			}
+
+		}
+		
+		NEQ_resistance_from_population_1 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = GFX_idea_pinkie_pissed
+			
+			modifier = {
+				stability_factor = -0.025
+				political_power_gain = -0.5
+				conscription = -0.05
+			}
+		}
+		NEQ_resistance_from_population_2 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = GFX_idea_pinkie_pissed2
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.5
+				conscription = -0.1
+				army_morale_factor = -0.05
+				research_speed_factor = -0.025
+				production_factory_max_efficiency_factor = -0.075
+			}
+		}
+		
+		NEQ_equalization_1 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = GFX_idea_equalization
+			
+			modifier = {
+				communism_drift = 0.1
+				political_power_gain = 0.5
+			}
+		}
+		NEQ_equalization_2 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = GFX_idea_equalization
+			
+			modifier = {
+				communism_drift = 0.2
+				political_power_gain = 1
+			}
+		}
+		NEQ_equalization_3 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = GFX_idea_equalization
+			
+			modifier = {
+				communism_drift = 0.3
+				political_power_gain = 1
+				democratic_drift = -0.1
+				fascism_drift = -0.1
+				neutrality_drift = -0.1
+			}
+		}
+		NEQ_abolished_social_hierarchy = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = the_forbidden_syrup
+			
+			modifier = {
+				political_power_gain = 1.5
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				max_planning = -0.1
+			}
+		}
+		NEQ_better_machines = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			cancel = {
+				
+			}
+
+			picture = the_forbidden_syrup
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1 
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

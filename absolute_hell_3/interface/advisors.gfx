@@ -1,0 +1,192 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_wayne_glensky"
+		texturefile = "gfx/interface/advisors/CAN/advisor_wayne_glensky.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_Pink_Guy"
+		texturefile = "gfx/interface/advisors/JAP/advisor_pink_guy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mumbo_jumbo"
+		texturefile = "gfx/interface/advisors/ENG/advisor_mumbo_jumbo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rantaro_futanari"
+		texturefile = "gfx/interface/advisors/JAP/advisor_rantaro_futanari.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_cyriak"
+		texturefile = "gfx/interface/advisors/ENG/advisor_cyriak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_linus"
+		texturefile = "gfx/interface/advisors/CAN/advisor_linus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_brother_hao"
+		texturefile = "gfx/interface/advisors/PRC/advisor_brother_hao.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_twomad_small"
+		texturefile = "gfx/interface/advisors/CAN/advisor_twomad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_baljeet"
+		texturefile = "gfx/interface/advisors/RAJ/advisor_baljeet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_william_afton"
+		texturefile = "gfx/interface/advisors/ENG/advisor_william_afton.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_chinese_eggman"
+		texturefile = "gfx/interface/advisors/CHI/advisor_chinese_eggman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_colinfurze"
+		texturefile = "gfx/interface/advisors/ENG/advisor_colinfurze.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mutahar"
+		texturefile = "gfx/interface/advisors/RAJ/idea_mutahar.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_avgn"
+		texturefile = "gfx/interface/advisors/CAN/advisor_avgn.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_german_waffle"
+		texturefile = "gfx/interface/advisors/GER/advisor_german_waffle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_chinese_big_shoes"
+		texturefile = "gfx/interface/advisors/PRC/advisor_chinese_big_shoes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_joel"
+		texturefile = "gfx/interface/advisors/SWE/advisor_joel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_santa_clause"
+		texturefile = "gfx/interface/advisors/CAN/advisor_santa_clause.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AST_smg4"
+		texturefile = "gfx/interface/advisors/AST/advisor_smg4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_allay"
+		texturefile = "gfx/interface/advisors/SWE/advisor_allay.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_thicc_joe"
+		texturefile = "gfx/interface/advisors/USA/advisor_thicc_joe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kurzgesagt"
+		texturefile = "gfx/interface/advisors/GER/advisor_kurzgesagt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vibri"
+		texturefile = "gfx/interface/advisors/JAP/advisor_vibri.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_parappa"
+		texturefile = "gfx/interface/advisors/JAP/advisor_parappa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pinkie_pie"
+		texturefile = "gfx/interface/advisors/NEQ/advisor_pinkie_pie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fluttershy"
+		texturefile = "gfx/interface/advisors/NEQ/advisor_fluttershy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mordecai"
+		texturefile = "gfx/interface/advisors/NEQ/advisor_mordecai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pinkamena_d_pie"
+		texturefile = "gfx/interface/advisors/ANG/advisor_pinkamena_d_pie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rarity_lisa_reynolds"
+		texturefile = "gfx/interface/advisors/ANG/advisor_rarity_lisa_reynolds.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lego_brody"
+		texturefile = "gfx/interface/advisors/DEN/advisor_lego_brody.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_sci_twi"
+		texturefile = "gfx/interface/advisors/CAN/advisor_sci_twi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_iraq_lobster"
+		texturefile = "gfx/interface/advisors/IRQ/advisor_iraq_lobster.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_super_idol"
+		texturefile = "gfx/interface/advisors/CHI/advisor_super_idol.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_emmet"
+		texturefile = "gfx/interface/advisors/DEN/advisor_emmet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rarity"
+		texturefile = "gfx/interface/advisors/NEQ/advisor_rarity.dds"
+	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_"
+#		texturefile = "gfx/interface/advisors//advisor_.dds"
+#	}
+
+}

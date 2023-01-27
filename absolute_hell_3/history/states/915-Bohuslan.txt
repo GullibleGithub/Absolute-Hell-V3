@@ -1,0 +1,24 @@
+state={
+	id=915
+	name="STATE_915"
+	provinces={
+		171 6310 
+	}
+	
+	history={
+		owner = SWE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = SWE
+
+	}
+	
+	manpower=287223
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

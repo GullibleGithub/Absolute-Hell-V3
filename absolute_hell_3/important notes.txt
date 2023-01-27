@@ -1,0 +1,5 @@
+DELETE STATES:
+153 tyrol
+158 piedmont
+
+DELETE SWISS STATES

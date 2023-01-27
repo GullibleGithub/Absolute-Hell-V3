@@ -1,0 +1,22 @@
+state={
+	id=1054
+	name="STATE_1054"
+	
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	
+	provinces={
+		1197 1934 4318 4996 
+	}
+	manpower=61075
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

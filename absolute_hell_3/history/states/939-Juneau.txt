@@ -1,0 +1,22 @@
+
+state={
+	id=939
+	name="STATE_939"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		10707 13202 13203 
+	}
+	manpower=26751
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

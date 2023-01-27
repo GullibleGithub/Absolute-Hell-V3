@@ -1,0 +1,24 @@
+
+state={
+	id=1040
+	name="STATE_1040"
+	
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1170 1566 1607 2061 4210 4654 7562 7603 12363 
+	}
+	manpower=1022000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

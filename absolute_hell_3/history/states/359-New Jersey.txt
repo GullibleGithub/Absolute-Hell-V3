@@ -1,0 +1,33 @@
+state={
+	id=359
+	name="STATE_359"
+
+	history={
+		owner = QDL
+		victory_points = {
+			9801 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 2
+			9864 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = QDL
+		add_core_of = USA
+
+	}
+
+	provinces={
+		9801 9864 11740 11900 
+	}
+	manpower=3096332
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=15.000
+}

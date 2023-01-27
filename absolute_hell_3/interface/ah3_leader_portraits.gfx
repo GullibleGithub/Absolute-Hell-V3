@@ -1,0 +1,588 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_can_calgary_callie"
+		texturefile = "gfx/leaders/CAN/Portrait_Canada_Calgary_Callie.dds"
+	}
+	spriteType = {
+		name = "GFX_ANG_angola_mois"
+		texturefile = "gfx/leaders/ANG/Portrait_Angola_Angola_Mois.dds"
+	}
+	spriteType = {
+		name = "GFX_AST_lucks_but_sus"
+		texturefile = "gfx/leaders/AST/Portrait_Australia_Lucks_but_sus.dds"
+	}
+	spriteType = {
+		name = "GFX_AST_bo"
+		texturefile = "gfx/leaders/AST/Portrait_Australia_Bo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BEL_isorrowproductions"
+		texturefile = "gfx/leaders/BEL/Portrait_Belgium_ISorrowProductions.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_le_frenchman"
+		texturefile = "gfx/leaders/FRA/Portrait_France_Le_Frenchman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_laurent_ritter"
+		texturefile = "gfx/leaders/FRA/Portrait_France_Laurent_Ritter.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_gre_fiz"
+		texturefile = "gfx/leaders/GRE/Portrait_Greece_Fiz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_JAP_filthyfrank"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_FilthyFrank.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_dr_phil"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_DrPhil.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_KEN_kanye_west"
+		texturefile = "gfx/leaders/KEN/Portrait_Kenya_Kanye West.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MEX_sr_pelo"
+		texturefile = "gfx/leaders/MEX/Portrait_Mexico_Sr_Pelo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_dani"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Dani.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_lucifer"
+		texturefile = "gfx/leaders/POL/Portrait_Poland_Lucifer.dds"
+	}
+	spriteType = {
+		name = "GFX_RAJ_t_series"
+		texturefile = "gfx/leaders/RAJ/Portrait_India_T_Series.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWE_anomaly"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Anomaly.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWE_pewdiepie"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Pewdiepie.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWI_drew_durnil"
+		texturefile = "gfx/leaders/SWI/Portrait_Switzerland_Drew_Durnil.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWI_shadman"
+		texturefile = "gfx/leaders/SWI/Portrait_Switzerland_Shadman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_delay_lama"
+		texturefile = "gfx/leaders/TIB/Portrait_Tibet_Delay_Lama.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_michael_jordan"
+		texturefile = "gfx/leaders/USA/portrait_USA_Micael_Jordan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_deez_nuts"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Deez_Nuts.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_iraq_saddam_hussein"
+		texturefile = "gfx/leaders/IRQ/IRQ_saddam_hussein.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LEB_Charlie_Magne"
+		texturefile = "gfx/leaders/LEB/Portrait_Lebanon_Charlie_Haram.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_GingerBrave"
+		texturefile = "gfx/leaders/KOR/Portrait_Korea_GingerBrave.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_BTS"
+		texturefile = "gfx/leaders/KOR/Portrait_Korea_BTS.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_UKR_Ukraine"
+		texturefile = "gfx/leaders/UKR/Portrait_Ukraine_Ukraine.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CYP_Miley_Cyprus"
+		texturefile = "gfx/leaders/CYP/Portrait_Cyprus_Miley_Cyprus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Ankha"
+		texturefile = "gfx/leaders/EGY/EGY_Ankha.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CRI_cardiac_arrest"
+		texturefile = "gfx/leaders/CRI/CRI_cardiac_arrest.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_gullibruh"
+		texturefile = "gfx/leaders/CAN/Portrait_Canada_GulliBruh.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_the_spy"
+		texturefile = "gfx/leaders/FRA/FRA_spy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_tf2_heavy"
+		texturefile = "gfx/leaders/SOV/SOV_tf2_heavy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_tf2_soldier"
+		texturefile = "gfx/leaders/USA/USA_tf2_soldier.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_tf2_engineer"
+		texturefile = "gfx/leaders/USA/USA_tf2_engineer.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_tf2_scout"
+		texturefile = "gfx/leaders/USA/USA_tf2_scout.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_xj9"
+		texturefile = "gfx/leaders/USA/USA_xj9.dds"
+	}
+	spriteType = {
+		name = "GFX_NZL_tf2_sniper"
+		texturefile = "gfx/leaders/NZL/NZL_tf2_sniper.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_ladybug"
+		texturefile = "gfx/leaders/FRA/FRA_ladybug.dds"
+	}
+	spriteType = {
+		name = "GFX_AST_blu_sniper"
+		texturefile = "gfx/leaders/AST/AST_blu_sniper.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ENG_blu_demoman"
+		texturefile = "gfx/leaders/ENG/ENG_blu_demoman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_lord_business"
+		texturefile = "gfx/leaders/DEN/DEN_lord_business.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MEX_blu_engineer"
+		texturefile = "gfx/leaders/MEX/MEX_blu_engineer.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_blu_scout"
+		texturefile = "gfx/leaders/CAN/CAN_blu_scout.dds"
+	}
+	spriteType = {
+		name = "GFX_AST_saxton_hale"
+		texturefile = "gfx/leaders/AST/AST_saxton_hale.dds"
+	}
+	spriteType = {
+		name = "GFX_NOR_laeffy"
+		texturefile = "gfx/leaders/NOR/NOR_laeffy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_freddy_fazbear"
+		texturefile = "gfx/leaders/USA/USA_freddy_fazbear.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_old_semyon_budyonny"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Semyon_Budyonny.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_iraq_desk"
+		texturefile = "gfx/leaders/IRQ/IRQ_desk.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_toilet"
+		texturefile = "gfx/leaders/POL/POL_toilet.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rtgame"
+		texturefile = "gfx/leaders/IRE/IRE_rtgame.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kur_rajab_wali"
+		texturefile = "gfx/leaders/KUR/KUR_rajab_wali.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRC_zhong_xina"
+		texturefile = "gfx/leaders/PRC/PRC_zhong_xina.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRC_the_wok"
+		texturefile = "gfx/leaders/PRC/PRC_the_wok.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_cow"
+		texturefile = "gfx/leaders/POL/POL_cow.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAK_salim_shady"
+		texturefile = "gfx/leaders/PAK/PAK_salim_shady.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_markiplier"
+		texturefile = "gfx/leaders/HAW/HAW_markiplier.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_twomad"
+		texturefile = "gfx/leaders/CAN/CAN_twomad.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_EST_tarmo"
+		texturefile = "gfx/leaders/EST/EST_tarmo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_TUR_patriot"
+		texturefile = "gfx/leaders/TUR/TUR_patriot.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_norton"
+		texturefile = "gfx/leaders/USA/USA_norton.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_cover_yourself_in_oil"
+		texturefile = "gfx/leaders/UKR/UKR_cover_yourself_in_oil.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BRK_brudda_osas"
+		texturefile = "gfx/leaders/BRK/Portrait_Bruhkanda_Brudda_Osas.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_zam_zamn"
+		texturefile = "gfx/leaders/ZAM/ZAM_zamn.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_yattazoi"
+		texturefile = "gfx/leaders/CAN/CAN_yattazoi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_yotazo"
+		texturefile = "gfx/leaders/CAN/CAN_yotazo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_random_hobo"
+		texturefile = "gfx/leaders/CAN/CAN_random_hobo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_nikocado_avocado"
+		texturefile = "gfx/leaders/UKR/UKR_nikocado.dds"
+	}
+	spriteType = {
+		name = "GFX_RAJ_under_the_water"
+		texturefile = "gfx/leaders/RAJ/RAJ_under_the_water.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_kanna"
+		texturefile = "gfx/leaders/CAN/CAN_kanna.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BUL_bulgaria"
+		texturefile = "gfx/leaders/BUL/BUL_bulgaria.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_egy_ankha_real"
+		texturefile = "gfx/leaders/EGY/EGY_ankha_real.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NGA_nigerian_prince"
+		texturefile = "gfx/leaders/NGA/NGA_nigerian_prince.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_freddie_mercury"
+		texturefile = "gfx/leaders/CZE/CZE_freddie_mercury.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_red"
+		texturefile = "gfx/leaders/FIN/FIN_red.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ENG_bruno_powroznik"
+		texturefile = "gfx/leaders/ENG/ENG_bruno_powroznik.dds"
+	}
+	spriteType = {
+		name = "GFX_GHA_coffin_dancer"
+		texturefile = "gfx/leaders/GHA/GHA_coffin_dancer.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_xd9"
+		texturefile = "gfx/leaders/CAN/CAN_xd9.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRC_shang_abi"
+		texturefile = "gfx/leaders/PRC/PRC_shang_abi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ENG_barry"
+		texturefile = "gfx/leaders/ENG/ENG_barry.dds"
+	}
+	spriteType = {
+		name = "GFX_SLV_ben"
+		texturefile = "gfx/leaders/SLV/SLV_ben.dds"
+	}
+	spriteType = {
+		name = "GFX_CHA_chad"
+		texturefile = "gfx/leaders/CHA/CHA_chad.dds"
+	}
+	spriteType = {
+		name = "GFX_CHA_gigachad"
+		texturefile = "gfx/leaders/CHA/CHA_gigachad.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_mario"
+		texturefile = "gfx/leaders/ITA/ITA_mario.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_luigi"
+		texturefile = "gfx/leaders/ITA/ITA_luigi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_peter_griffin"
+		texturefile = "gfx/leaders/USA/USA_peter_griffin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_chungus_khan"
+		texturefile = "gfx/leaders/MON/MON_chungus_khan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_one"
+		texturefile = "gfx/leaders/CAN/CAN_one.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_smooth_trollface"
+		texturefile = "gfx/leaders/CAN/CAN_smooth_trollface.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_snail_face"
+		texturefile = "gfx/leaders/CAN/CAN_snail_face.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWE_steve"
+		texturefile = "gfx/leaders/SWE/SWE_steve.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWE_alex"
+		texturefile = "gfx/leaders/SWE/SWE_alex.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ARG_hortler"
+		texturefile = "gfx/leaders/ARG/ARG_hortler.dds"
+	}
+	spriteType = {
+		name = "GFX_NOR_Karlson"
+		texturefile = "gfx/leaders/NOR/NOR_Karlson.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_VEN_mrbeast"
+		texturefile = "gfx/leaders/VEN/VEN_mrbeast.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ENG_british_trollface"
+		texturefile = "gfx/leaders/ENG/ENG_british_trollface.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CHA_chad_yattazoi"
+		texturefile = "gfx/leaders/CHA/CHA_chad_yattazoi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SWE_jenny_belle"
+		texturefile = "gfx/leaders/SWE/SWE_jenny_belle.dds"
+	}
+	spriteType = {
+		name = "GFX_AST_v"
+		texturefile = "gfx/leaders/AST/AST_v.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ETH_poonis"
+		texturefile = "gfx/leaders/ETH/ETH_poonis.dds"
+	}
+	spriteType = {
+		name = "GFX_RAJ_modi"
+		texturefile = "gfx/leaders/RAJ/RAJ_modi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NMB_adolf_hitler"
+		texturefile = "gfx/leaders/NMB/NMB_adolf_hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAD_king_julien"
+		texturefile = "gfx/leaders/MAD/MAD_king_julien.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_UGA_ugandan_knuckles"
+		texturefile = "gfx/leaders/UGA/UGA_ugandan_knuckles.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_chuck"
+		texturefile = "gfx/leaders/FIN/FIN_chuck.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_bomb"
+		texturefile = "gfx/leaders/FIN/FIN_bomb.dds"
+	}
+	spriteType = {
+		name = "GFX_POL_probably_polish"
+		texturefile = "gfx/leaders/POL/POL_probably_polish.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_peach"
+		texturefile = "gfx/leaders/ITA/ITA_peach.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MEX_mokey"
+		texturefile = "gfx/leaders/MEX/MEX_mokey.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_JAP_keroro"
+		texturefile = "gfx/leaders/JAP/JAP_keroro.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_JAP_tamama"
+		texturefile = "gfx/leaders/JAP/JAP_tamama.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_JAP_giroro"
+		texturefile = "gfx/leaders/JAP/JAP_giroro.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_CSA_airplane_guy"
+		texturefile = "gfx/leaders/CSA/CSA_airplane_guy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_canadian_trollface"
+		texturefile = "gfx/leaders/CAN/CAN_canadian_trollface.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_earth_guy"
+		texturefile = "gfx/leaders/CAN/CAN_earth_guy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_teddy_bear"
+		texturefile = "gfx/leaders/CAN/CAN_teddy_bear.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_JAP_vibri"
+		texturefile = "gfx/leaders/JAP/JAP_vibri.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_two"
+		texturefile = "gfx/leaders/CAN/CAN_two.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_three"
+		texturefile = "gfx/leaders/CAN/CAN_three.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_four"
+		texturefile = "gfx/leaders/CAN/CAN_four.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_five"
+		texturefile = "gfx/leaders/CAN/CAN_five.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_six"
+		texturefile = "gfx/leaders/CAN/CAN_six.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_seven"
+		texturefile = "gfx/leaders/CAN/CAN_seven.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_eight"
+		texturefile = "gfx/leaders/CAN/CAN_eight.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_nine"
+		texturefile = "gfx/leaders/CAN/CAN_nine.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_xiaoma"
+		texturefile = "gfx/leaders/USA/USA_xiaoma.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_poocock"
+		texturefile = "gfx/leaders/CAN/CAN_poocock.dds"
+	}
+ 	spriteType = {
+ 		name = "GFX_portrait_ENG_angry_guy"
+ 		texturefile = "gfx/leaders/ENG/ENG_angry_guy.dds"
+ 	}
+ 	spriteType = {
+ 		name = "GFX_portrait_ENG_angry_guy_sign"
+ 		texturefile = "gfx/leaders/ENG/ENG_angry_guy_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_jacksepticeye"
+		texturefile = "gfx/leaders/IRE/IRE_jacksepticeye.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NEQ_twilight_sparkle"
+		texturefile = "gfx/leaders/NEQ/NEQ_twilight_sparkle.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NEQ_clyde"
+		texturefile = "gfx/leaders/NEQ/NEQ_clyde.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NEQ_rainbow_dash"
+		texturefile = "gfx/leaders/NEQ/NEQ_rainbow_dash.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ENG_spooky"
+		texturefile = "gfx/leaders/ENG/ENG_spooky.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MEX_el_macho"
+		texturefile = "gfx/leaders/MEX/MEX_el_macho.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NEQ_applejack"
+		texturefile = "gfx/leaders/NEQ/NEQ_applejack.dds"
+	}
+	spriteType = {
+		name = "GFX_ANG_hdd_twilight"
+		texturefile = "gfx/leaders/ANG/ANG_hdd_twilight.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_shrek"
+		texturefile = "gfx/leaders/GER/GER_shrek.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ROM_morbius"
+		texturefile = "gfx/leaders/ROM/ROM_morbius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEN_unikitty"
+		texturefile = "gfx/leaders/DEN/DEN_unikitty.dds"
+	}
+	spriteType = {
+		name = "GFX_RAJ_protegent"
+		texturefile = "gfx/leaders/RAJ/RAJ_protegent.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAN_canadian_goose"
+		texturefile = "gfx/leaders/CAN/CAN_canadian_goose.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NEQ_starlight_glimmer"
+		texturefile = "gfx/leaders/NEQ/NEQ_starlight_glimmer.dds"
+	}
+#	spriteType = {
+#		name = "GFX_portrait_"
+#		texturefile = "gfx/leaders//.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_portrait_"
+#		texturefile = "gfx/leaders//.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_portrait_"
+#		texturefile = "gfx/leaders//.dds"
+#	}
+
+}

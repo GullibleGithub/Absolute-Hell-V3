@@ -1,0 +1,24 @@
+state={
+	id=991
+	name="STATE_991"
+	
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+	
+	provinces={
+		9791 9930 
+	}
+	manpower=68182
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

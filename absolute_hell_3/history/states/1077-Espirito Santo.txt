@@ -1,0 +1,30 @@
+state={
+	id=1077
+	name="STATE_1077"
+	
+	history={
+		owner = BRA
+		victory_points = {
+			10999 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			10999 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = BRA
+
+	}
+	
+	provinces={
+		2153 8196 10999 
+	}
+	manpower=690149
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

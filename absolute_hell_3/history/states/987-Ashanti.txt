@@ -1,0 +1,21 @@
+state={
+	id=987
+	name="STATE_987"
+	
+	history={
+		owner = ENG
+		add_core_of = GHA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	provinces={
+		12787 
+	}
+	manpower=2314815
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=1068
+	name="STATE_1068"
+	
+	history={
+		add_core_of = VIN
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+	
+	provinces={
+		1248 1302 4255 4379 4397 7229 7280 9988 10016 10137 10180 10309 11909 11936 12297 
+	}
+	manpower=5202160
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

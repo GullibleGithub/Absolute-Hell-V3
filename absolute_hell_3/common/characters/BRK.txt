@@ -1,0 +1,441 @@
+characters={
+	BRK_brudda_osas={
+		name="Brudda Osas"
+		portraits={
+			civilian={
+				large="GFX_portrait_BRK_brudda_osas"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1980.1.1.1"
+			id=-1
+		}
+	}
+	
+	BRK_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = BRK_acgs
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	BRK_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = BRK_ncm
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	BRK_mt={
+		advisor={
+			slot = theorist
+			idea_token = BRK_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_6"
+			}
+		}
+	}
+	BRK_nt={
+		advisor={
+			slot = theorist
+			idea_token = BRK_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+	}
+	BRK_ai2={
+		advisor={
+			slot = high_command
+			idea_token = BRK_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_3"
+			}
+		}
+	}
+	BRK_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = BRK_fascist_guy
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	BRK_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = BRK_stc
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	BRK_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = BRK_communist_guy
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_3"
+			}
+		}
+	}
+	BRK_aa2={
+		advisor={
+			slot = high_command
+			idea_token = BRK_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_2"
+			}
+		}
+	}
+	BRK_ar={
+		advisor={
+			slot = high_command
+			idea_token = BRK_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_5"
+			}
+		}
+	}
+	BRK_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = BRK_acd2
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_1"
+			}
+		}
+	}
+	BRK_acr={
+		advisor={
+			slot = air_chief
+			idea_token = BRK_acr
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_3"
+			}
+		}
+	}
+	BRK_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = BRK_coi
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	BRK_acas={
+		advisor={
+			slot = high_command
+			idea_token = BRK_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	BRK_awt={
+		advisor={
+			slot = theorist
+			idea_token = BRK_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_african_2"
+			}
+		}
+	}
+	BRK_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = BRK_pot
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+	}
+	BRK_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = BRK_nccr
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+	BRK_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = BRK_aco2
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_4"
+			}
+		}
+	}
+	BRK_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = BRK_democratic_guy
+			allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_african_1"
+			}
+		}
+	}
+	BRK_ncs={
+		advisor={
+			slot = high_command
+			idea_token = BRK_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = BRK
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_african_2"
+			}
+		}
+	}
+}

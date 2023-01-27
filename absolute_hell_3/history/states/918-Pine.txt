@@ -1,0 +1,23 @@
+state={
+	id=918
+	name="STATE_918"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+		add_core_of = USB
+
+	}
+	
+	provinces={
+		1719 6827 12550 
+	}
+	manpower=29302
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=979
+	name="STATE_979"
+	
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MEX
+
+	}
+	
+	provinces={
+		12867 
+	}
+	manpower=248243	
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

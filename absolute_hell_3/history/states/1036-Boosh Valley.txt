@@ -1,0 +1,32 @@
+state={
+	id=1036
+	name="STATE_1036"
+	provinces={
+		11145 
+	}
+	
+	history={
+		owner = BRK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 2
+			anti_air_building = 5
+			11145 = {
+				bunker = 10
+			}
+			
+		}
+		add_core_of = BRK
+		add_core_of = KEN
+		victory_points = {
+			11145 20
+		}
+
+	}
+	
+	manpower=2800000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

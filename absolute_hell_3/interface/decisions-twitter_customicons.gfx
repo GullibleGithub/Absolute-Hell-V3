@@ -1,0 +1,38 @@
+spriteTypes = { 
+	##Icon For Category: Twitter
+	SpriteType = { 
+		name = "decision_category_icon_twitter"
+		texturefile = "gfx/interface/decisions/decision_category_icon_twitter.dds"
+	}
+
+	##Picture For: Twitter
+	SpriteType = { 
+		name = "decision_category_picture_twitter"
+		texturefile = "gfx/interface/decisions/decision_category_picture_twitter.dds"
+	}
+
+	##Icon For: Ban Twitter
+	SpriteType = { 
+		name = "decision_icon_ban_twitter"
+		texturefile = "gfx/interface/decisions/decision_icon_ban_twitter.dds"
+	}
+
+	##Icon For: Post a meme
+	SpriteType = { 
+		name = "decision_icon_post_a_meme"
+		texturefile = "gfx/interface/decisions/decision_icon_post_a_meme.dds"
+	}
+
+	##Icon For: Post War Propaganda
+	SpriteType = { 
+		name = "decision_icon_post_war_propaganda"
+		texturefile = "gfx/interface/decisions/decision_icon_post_war_propaganda.dds"
+	}
+
+	##Icon For: Post War Propaganda
+	SpriteType = { 
+		name = "decision_icon_post_war_propaganda"
+		texturefile = "gfx/interface/decisions/decision_icon_post_war_propaganda.dds"
+	}
+
+}

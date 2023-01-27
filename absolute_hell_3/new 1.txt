@@ -1,0 +1,104 @@
+Italy
+
+	ITA_peach={
+		name="Princess Peach"
+		portraits={
+			civilian={
+				large="GFX_portrait_ITA_peach"
+			}
+		}
+		gender = female 
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ITA_mario={
+		name="Mario Mario"
+		portraits={
+			army={
+				large=GFX_portrait_ITA_mario
+			}
+		}
+		corps_commander={
+			traits={ media_personality old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	
+	ITA_luigi={
+		name="Luigi Mario"
+		portraits={
+			army={
+				large=GFX_portrait_ITA_luigi
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+Ethiopia
+
+	ETH_poonis={
+		name="Poonis"
+		portraits={
+			army={
+				large=GFX_portrait_ETH_poonis
+			}
+		}
+		field_marshal={
+			traits={ commando desert_fox }
+			skill=9
+			attack_skill=9
+			defense_skill=9
+			planning_skill=9
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+
+Switzerland
+
+	SWI_drew_durnil={
+		name="Drew Durnil"
+		portraits={
+			civilian={
+				large=GFX_portrait_SWI_drew_durnil
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ fascist_Sympathies }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SWI_shadman={
+		name="Shadman"
+		portraits={
+			civilian={
+				large=GFX_portrait_SWI_shadman
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ dictator incognito }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

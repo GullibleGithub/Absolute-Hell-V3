@@ -1,0 +1,22 @@
+state={
+	id=1032
+	name="STATE_1032"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = USA
+
+	}
+	
+	provinces={
+		4287 10247 12221 
+	}
+	manpower=94436
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

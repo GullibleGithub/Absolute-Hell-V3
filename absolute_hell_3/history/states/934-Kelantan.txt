@@ -1,0 +1,35 @@
+
+state={
+	id=934
+	name="STATE_934"
+
+	history={
+		owner = MAL
+		victory_points = {
+			7329 1 
+		}
+		buildings = {
+			infrastructure = 2
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+
+			}
+			10297 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = MAL
+
+	}
+
+	provinces={
+		1348 4355 7329 10227 12199 
+	}
+	manpower=713014
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,20 @@
+state={
+	id=927
+	name="STATE_927"
+	
+	history={
+		owner = FRA
+		add_core_of = CAR
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1974 5084
+	}
+	manpower=1136921
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=2.000
+}

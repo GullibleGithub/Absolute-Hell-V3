@@ -1,0 +1,27 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = ah3_news
+
+news_event = {
+	id = ah3_news.1
+	title = ah3_news.1.t
+	desc = ah3_news.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ah3_news.1.a
+		trigger = {
+			NOT = { TAG = CAN }
+		}
+	}
+	option = {
+		name = ah3_news.1.b
+		trigger = { TAG = CAN }
+	}
+}

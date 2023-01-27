@@ -1,0 +1,22 @@
+state={
+	id=916
+	name="STATE_916"
+	provinces={
+		211 
+	}
+	
+	history={
+		owner = SWE
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SWE
+
+	}
+	
+	manpower=25846
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}
